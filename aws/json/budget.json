@@ -1,9 +1,9 @@
 {
     "BudgetLimit": {
-        "Amount": "5",
+        "Amount": "2",
         "Unit": "USD"
     },
-    "BudgetName": "Example Tag Budget2",
+    "BudgetName": "Budget1",
     "BudgetType": "COST",
     "CostFilters": {
         "TagKeyValue": [
