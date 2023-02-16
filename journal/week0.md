@@ -160,11 +160,11 @@ To Resolve the Issue, Follw the Below Steps
 
 1. Click Account at the Left Side Bottom and Select "Open Settings"
 
-![gitpod acc](./Images/Week0/GitPod_err_2.1)
+<img src="./Images/Week0/GitPod_err_2.1"  width="60%" height="30%">
 
 2. Click "Integrations" and Select the "GitHub" Account
 
-![gitpod git](./Images/Week0/GitPod_err_3.jpg)
+<img src="./Images/Week0/GitPod_err_3.jpg"  width="60%" height="30%">
 
 3. CLick the 3dots and Edit Permissions
 ![gitpod edit](./Images/Week0/GitPod_err_2.jpg)
