@@ -148,3 +148,30 @@ aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm-config.js
 
 [CICD FLow LucidChart Link](https://lucid.app/lucidchart/dcf4deff-2518-40c6-8dc1-399bc17ad858/edit?invitationId=inv_5510c85d-8dd4-4aa6-b27e-70bbbbdde270)
 
+# 9. GitOpd Push Error 
+
+Faced challenge When Push Code First time from GitPod to GitHub
+
+Below is the Error 
+
+![gitpod error](./Images/Week0/GitPod_err_1.jpg)
+
+To Resolve the Issue, Follw the Below Steps
+
+1. Click Account at the Left Side Bottom and Select "Open Settings"
+
+![gitpod acc](./Images/Week0/GitPod_err_2.1)
+
+2. Click "Integrations" and Select the "GitHub" Account
+
+![gitpod git](./Images/Week0/GitPod_err_3.jpg)
+
+3. CLick the 3dots and Edit Permissions
+![gitpod edit](./Images/Week0/GitPod_err_2.jpg)
+
+4. Enable the "public_repo" box
+
+![gitpod push](./Images/Week0/GitPod_err_4.jpg)
+
+5. Then Retry to Push the Code to GitHub Repo. This time it will be Successful Push.
+
