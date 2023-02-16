@@ -99,7 +99,7 @@ aws budgets create-budget \
 ```
 
 ![Budget Image](./Images/Week0/Budgets.JPG)
-
+#
 ## 4. Creating sns topics for alerts
 1. Create Topic
 
@@ -123,7 +123,7 @@ gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ aws sns subscribe \
 }
 ```
 ![SNS Topics](./Images/Week0/SNS_Topics.JPG)
-
+#
 ## 5. Creating cloudwatch Alarms through alarm-config.json file
 
 ```javascript
@@ -131,24 +131,24 @@ aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm-config.js
 ```
 ![cloudwatch Alarm](./Images/Week0/CloudWatch.JPG)
 
-
-# 6. Logical Diagram for the Cruddur Application
+#
+## 6. Logical Diagram for the Cruddur Application
 
 ![Logical Diagram](./Images/Week0/Logical-Diagram.jpg)
-
-# 7. Conceptual Chart
+#
+## 7. Conceptual Chart
 
 ![Conceptual Chart](./Images/Week0/Cruddur-Conceptual-Diagram.jpeg)
 
 [Conceptual Chart LucidChart Link](https://lucid.app/lucidchart/9568f89a-ebb8-4f91-b096-5aedf2614f42/edit?invitationId=inv_4361516c-c455-4f36-b78a-1dbb3fe6f548)
-
-# 8. CI CD Flow Diagram
+#
+## 8. CI CD Flow Diagram
 
 ![CICD FLow](./Images/Week0/CICD_FLow.jpeg)
 
 [CICD FLow LucidChart Link](https://lucid.app/lucidchart/dcf4deff-2518-40c6-8dc1-399bc17ad858/edit?invitationId=inv_5510c85d-8dd4-4aa6-b27e-70bbbbdde270)
-
-# 9. GitOpd Push Error 
+#
+## 9. GitOpd Push Error 
 
 Faced challenge When Push Code First time from GitPod to GitHub
 
@@ -175,3 +175,70 @@ To Resolve the Issue, Follw the Below Steps
 
 5. Then Retry to Push the Code to GitHub Repo. This time it will be Successful Push.
 
+####################################################
+
+## 10. More on Cost Management
+### 10.1 Cost Allocation Tags
+
+By Default, Cost Allocation Tags service is not activating, we have to select the tags and Activate the Services. Its will be very handy to calculate the Cost using the resources Tags.
+
+Follow the below steps to enable:
+
+1. Go to AWS Billing Page, Click on "Cost allocation tags" on left panel
+1. Then Select the "Tag Key", which need to activate.
+3. Click the "Active" Button at the right side of the box
+
+<img src="./Images/Week0/Cost_Allocation_Tags.JPG"  width="100%" height="100%">
+
+#
+### 10.2 Cost Categories
+
+Cost Categories automatically categorizes your cost information into custom groups. 
+
+Follow the below steps Create Cost Categories:
+
+1. Go to AWS Billing Page, Click on "Cost Categories" on left panel
+2. Click on "Create cost Category"
+3. Fill the Report name and other details
+
+<img src="./Images/Week0/Cost_Categories_2.JPG"  width="100%" height="100%">
+<img src="./Images/Week0/Cost_Categories_3.JPG"  width="100%" height="100%">
+<img src="./Images/Week0/Cost_Categories_1.JPG"  width="100%" height="100%">
+
+#
+### 10.3 Cost Explorer
+
+Cost Explorer will provide helpful cost and usage insights.
+
+Follow the below steps to Create Cost Explorer Reports:
+
+1. Go to AWS Billing Page, Click on "Cost explorer" on left panel under Cost Management.
+1. It will New Page for "AWS Cost Management"
+1. Click on "Cost Explorer"
+1. Specify date range, Granularity (Hours/Daily/Monthly) 
+1. Under Filers Specify more details to generate report.
+
+<img src="./Images/Week0/Cost_Explorer_1.JPG"  width="50%" height="50%">
+
+#
+<img src="./Images/Week0/Cost_Explorer_2.JPG"  width="100%" height="100%">
+
+#
+<img src="./Images/Week0/Cost_Explorer_3.JPG"  width="100%" height="100%">
+
+Step to Follow to Generate Default Reports
+1. Click "Reports" under AWS Cost Management" page
+1. Select any of the Default report
+1. To generate reports
+
+<img src="./Images/Week0/Cost_Explorer_4_Default_Reports.JPG"  width="100%" height="100%">
+
+#
+### 10.4 To Get Free Tier Usage Report
+1. Go to AWS Billing Page, Click on "Billing Preferences" under Preferences title.
+2. Select the Click boxes as below
+3. Provide your mail ID to receive Alert mails about the Free Tier Usage.
+4. Click on "Save preferences"
+
+<img src="./Images/Week0/Free_Tier_Usage_Alerts.JPG"  width="70%" height="100%">
+ 
