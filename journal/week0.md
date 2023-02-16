@@ -167,11 +167,11 @@ To Resolve the Issue, Follw the Below Steps
 <img src="./Images/Week0/GitPod_err_3.jpg"  width="60%" height="30%">
 
 3. CLick the 3dots and Edit Permissions
-![gitpod edit](./Images/Week0/GitPod_err_2.jpg)
+<img src="./Images/Week0/GitPod_err_2.jpg"  width="60%" height="30%">
 
 4. Enable the "public_repo" box
 
-![gitpod push](./Images/Week0/GitPod_err_4.jpg)
+<img src="./Images/Week0/GitPod_err_4.jpg"  width="60%" height="30%">
 
 5. Then Retry to Push the Code to GitHub Repo. This time it will be Successful Push.
 
