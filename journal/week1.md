@@ -1,5 +1,4 @@
-# Week 1 — App Containerization
-
+# Week 01 — App Containerization
 ## 01. Docker Files
 
 Connect GitPod Enviroment. 
@@ -12,7 +11,7 @@ cd frontend-react-js
 
 npm i
 ```
-![npm install](./Images/Week-01/FrontEnd-npm.JPG)
+<img src="./Images/Week-01/FrontEnd-npm.JPG"  width="70%" height="100%">
 
 Create Docker files for Frontend and Backend Application to run in Containers.
 
@@ -335,7 +334,9 @@ volumes:
   db:
     driver: local
 ```
-![docker composs](./Images/Week-01/Docker-Compose1.JPG)
+<img src="./Images/Week-01/Docker-Compose1.JPG"  width="70%" height="100%">
+
+
 ### docker-compose Containers Running
 ```DOCKER
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ docker ps
@@ -347,11 +348,13 @@ e12dce8f7666   amazon/dynamodb-local:latest                  "java -jar DynamoDB
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ 
 
 ```
-![gitpod page](./Images/Week-01/gitpod-page-1.JPG)
+
+<img src="./Images/Week-01/gitpod-page-1.JPG"  width="70%" height="100%">
+
 
 Crudder Running from GitPod 
 
-![URL1](./Images/Week-01/url1.JPG)
+<img src="./Images/Week-01/url1.JPG"  width="70%" height="100%">
 
 ### Modify the Message in the HomeScreen
 
@@ -369,14 +372,15 @@ class HomeActivities:
 
 ```
 
-![updated home](./Images/Week-01/Backend-data-change.JPG)
+<img src="./Images/Week-01/Backend-data-change.JPG"  width="70%" height="100%">
 
 
 Refresh the Screen:
 
 Now you can view the updated screen
 
-![updated home](./Images/Week-01/url_change.JPG)
+
+<img src="./Images/Week-01/url_change.JPG"  width="70%" height="100%">
 
 
 ### Adding notification Features on the Crudder Application.
@@ -387,7 +391,9 @@ update the Following Files inside  "frontend-react-js" Folder
 
 ./src/App.js, ./src/pages/NotificationsFeedPage.css and ./src/pages/NotificationsFeedPage.js files
 
-![Notification](./Images/Week-01/notification-page-1.JPG)
+
+<img src="./Images/Week-01/notification-page-1.JPG"  width="70%" height="100%">
+
 
 At End Commit all the Changes to the GitHub Repo.
 
@@ -416,7 +422,9 @@ echo "################END###########"
 
 1. Already i'm having GitHub Account, if you don't have, Create it.
 2. Tag the Images created in the GitPod Space. all the Images is having latest tag. So we have to change it to our GitHub id.
-![docimg](./Images/Week-01/Docker-Images-1.JPG)
+
+<img src="./Images/Week-01/Docker-Images-1.JPG"  width="70%" height="100%">
+
 3. Use "docker tag" command to change the tag.
 ```YML
 docker tag <image-name>:<tag> <Docker-Hub-ID>/<image-name>:<tag>
@@ -441,7 +449,7 @@ docker push ganeshpondy/aws-bootcamp-cruddur-2023-frontend-react-js:week01
 
 ![DH](./Images/Week-01/Docker-Hub-1.JPG)    
 
-![DH](./Images/Week-01/Docker-Hub-2.JPG)    
+<img src="./Images/Week-01/Docker-Hub-2.JPG"  width="70%" height="100%">
 
 ![DH](./Images/Week-01/Docker-Hub-Tag.JPG)  
 
@@ -478,7 +486,8 @@ CMD ["npm", "start"]
 
 Using Multi-Stage Compose File, the Image size is reduced from 415 MB to 181 MB
 
-![image](./Images/Week-01/MultiStage-Docker-Image-After.JPG)
+<img src="./Images/Week-01/MultiStage-Docker-Image-After.JPG"  width="70%" height="100%">
+
 
 And we are able to run Crudder Application from the new Image.
 
@@ -490,7 +499,7 @@ And we are able to run Crudder Application from the new Image.
 
 Updated below steps in Docker Compose file to check the HealthCheck:
 
-![image](./Images/Week-01/Compose-Health-Checks.JPG)
+<img src="./Images/Week-01/Compose-Health-Checks.JPG"  width="70%" height="100%">
 
 
 ## 05. Research best practices of Dockerfiles and attempt to implement it in your Dockerfile
@@ -570,7 +579,7 @@ docker run -it --detach --rm --network aws-bootcamp-cruddur-2023_default -p 5432
 
 07. Finally, We are Able to Run the Application on Local Laptop
 
-<img src="./Images/Week-01/LocalHost-with-Baackend-Connection.JPG"  width="100%" height="100%">
+<img src="./Images/Week-01/LocalHost-with-Baackend-Connection.JPG"  width="70%" height="100%">
 
 
 ----
@@ -597,7 +606,8 @@ We have scanned the code and the Container Image using SYNK Tool
 
 8. To Scan Docker Image. Generate "Access Token" in Docker-Hub
 
-![DH](./Images/Week-01/synk-image-docker-hub-1.JPG)
+<img src="./Images/Week-01/synk-image-docker-hub-1.JPG"  width="70%" height="70%">
+
 
 9. Add Docker Repo in SYNK Project and Scan it
 
