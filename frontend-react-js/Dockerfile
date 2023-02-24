@@ -16,7 +16,7 @@ CMD ["npm", "start"]
 # WORKDIR /frontend-react-js
 # RUN npm install
 
-# FROM node:16.18.1-slim
+# FROM node:16.18.1-alpine3.16
 # COPY --from=base /frontend-react-js/package-lock.json /frontend-react-js/
 # WORKDIR /frontend-react-js
 # EXPOSE ${PORT}
