@@ -648,16 +648,18 @@ We have scanned the code and the Container Image using SYNK Tool
 1. Login with GitHub Account or Docker-Hub Account
 1. Select Repo
 1. Add into Project
-1. Scan it
-![DH](./Images/Week-01/synk-Code-1.JPG)
+1. Scan it.
+
+<img src="./Images/Week-01/synk-Code-1.JPG"  width="70%" height="70%">
 
 6. We can see the security vulnerability issues.
 
 7. Code Security Recommandation.
-![DH](./Images/Week-01/synk-Code-Recommandations.JPG)
+<img src="./Images/Week-01/synk-Code-Recommandations.JPG"  width="70%" height="70%">
+
 
 8. To Scan Docker Image. Generate "Access Token" in Docker-Hub
-<img src="./Images/Week-01/synk-image-docker-hub-1.JPG"  width="70%" height="70%">
+<img src="./Images/Week-01/synk-image-docker-hub-1.JPG"  width="50%" height="50%">
 
 9. Add Docker Repo in SYNK Project and Scan it
 <img src="./Images/Week-01/synk-image-1.JPG"  width="70%" height="70%">
