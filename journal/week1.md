@@ -349,10 +349,10 @@ gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $
 
 ```
 
-<img src="./Images/Week-01/gitpod-page-1.JPG"  width="70%" height="100%">
+<img src="./Images/Week-01/gitpod-page-1.JPG"  width="50%" height="100%">
 
 
-Crudder Running from GitPod 
+Cruddur Running from GitPod 
 
 <img src="./Images/Week-01/url1.JPG"  width="70%" height="100%">
 
@@ -383,7 +383,7 @@ Now you can view the updated screen
 <img src="./Images/Week-01/url_change.JPG"  width="70%" height="100%">
 
 
-### Adding notification Features on the Crudder Application.
+### Adding notification Features on the Cruddur Application.
 
 Update the "notifications_activities.py" file in backend-flask Folder. 
 
@@ -489,7 +489,7 @@ Using Multi-Stage Compose File, the Image size is reduced from 415 MB to 181 MB
 <img src="./Images/Week-01/MultiStage-Docker-Image-After.JPG"  width="70%" height="100%">
 
 
-And we are able to run Crudder Application from the new Image.
+And we are able to run Cruddur Application from the new Image.
 
 ![image](./Images/Week-01/MultiStage-Docker-Image-After_Apprun.JPG)
 
@@ -503,6 +503,43 @@ Updated below steps in Docker Compose file to check the HealthCheck:
 
 
 ## 05. Research best practices of Dockerfiles and attempt to implement it in your Dockerfile
+
+Followed below Best Practices
+
+1. Used official and verified Docker Images as Base Image 
+2. Not Used "Latest" TAG, As the "Latest" image will change always
+3. Used Small-Sized Official Images "alpine" at Final Stage
+4. Used Multi-Stage Build, to reduce image size
+5. Not used admin user, we have used user "node", having Least Privileged User.
+
+```DOCKER
+#Multi-stage Build Steps
+
+FROM node:16.18 as base
+ENV PORT=3000
+
+COPY . /frontend-react-js
+# Set ownership and permission
+RUN chown -R node:node /frontend-react-js
+WORKDIR /frontend-react-js
+#Switch to node user, 
+USER node
+#Optimize Caching Image Layers
+RUN npm install
+
+#Use Small-Sized Official Images
+FROM node:16.18.1-alpine3.16
+COPY --from=base /frontend-react-js/package-lock.json /frontend-react-js/
+# Set ownership and permission
+RUN chown -R node:node /frontend-react-js
+WORKDIR /frontend-react-js
+#Switch to node user, 
+USER node
+EXPOSE ${PORT}
+CMD ["npm", "start"]
+
+
+```
 
 
 ## 06. Learn how to install Docker on your localmachine and get the same containers running outside of Gitpod / Codespaces
@@ -581,6 +618,62 @@ docker run -it --detach --rm --network aws-bootcamp-cruddur-2023_default -p 5432
 
 <img src="./Images/Week-01/LocalHost-with-Baackend-Connection.JPG"  width="70%" height="100%">
 
+## 07. Running Docker in AWS EC2 Instance
+
+1. Login AWS with IAM User
+1. Create EC2 Instance
+1. allow port 443 to pull image from Docker Repo
+1. Install Docker
+1. Create Docker-Compose file to Pull & Run Docker Images
+```YAML  
+    docker login
+    docker-compose pull
+    docker-compose up -d
+```
+1. docker-compose.yml file
+
+```YAML
+version: "3.8"
+services:
+  backend-flask:
+    image: ganeshpondy/aws-bootcamp-cruddur-2023-backend-flask:week01-v2
+    environment:
+      FRONTEND_URL: "http://<IP>:3000"
+      BACKEND_URL: "http://<IP>:4567"
+    ports:
+      - "4567:4567"
+
+  frontend-react-js:
+    environment:
+      REACT_APP_BACKEND_URL: "http://<IP>:4567"
+    image: ganeshpondy/aws-bootcamp-cruddur-2023-frontend-react-js:week01-v2
+    ports:
+      - "3000:3000"
+
+  dynamodb-local:
+    image: ganeshpondy/dynamodb-local:week01-v2
+    ports:
+      - "8000:8000"
+  db:
+    image: ganeshpondy/postgres:week01-v2
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    ports:
+      - '5432:5432'
+    volumes: 
+      - db:/var/lib/postgresql/data
+
+networks: 
+  internal-network:
+    driver: bridge
+    name: cruddur
+
+volumes:
+  db:
+    driver: local
+```
 
 ----
 
