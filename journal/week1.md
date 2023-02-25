@@ -8,10 +8,8 @@ Go to frontend-react-js Directory and Install npm. npm is a package manager for 
 ```BASH
 
 cd frontend-react-js
-
 npm i
 ```
-<img src="./Images/Week-01/FrontEnd-npm.JPG"  width="70%" height="100%">
 
 Create Docker files for Frontend and Backend Application to run in Containers.
 
@@ -29,19 +27,6 @@ RUN npm install
 EXPOSE ${PORT}
 CMD ["npm", "start"]
 
-#Multi-stage Build Steps
-
-# FROM node:16.18 as base
-# ENV PORT=3000
-# COPY . /frontend-react-js
-# WORKDIR /frontend-react-js
-# RUN npm install
-
-# FROM node:16.18.1-alpine3.16
-# COPY --from=base /frontend-react-js/package-lock.json /frontend-react-js/
-# WORKDIR /frontend-react-js
-# EXPOSE ${PORT}
-# CMD ["npm", "start"]
 ```
 
 ### Build Container
@@ -49,15 +34,16 @@ CMD ["npm", "start"]
 ```BASH
 docker build -t  frontend-react-js ./frontend-react-js
 ```
-![docker build FE](./Images/Week-01/FrontEnd-docker1.JPG)
+<!-- ![docker build FE](./Images/Week-01/FrontEnd-docker1.JPG)-->
+
 ### Run Docker
 ```DOCKER
 docker run -p 3000:3000 -d frontend-react-js
 ```
 
-BackEnd Docker File
+BackEnd Docker File Path:
 
-```aws-bootcamp-cruddur-2023/backend-flask/Dockerfile```
+```./aws-bootcamp-cruddur-2023/backend-flask/Dockerfile```
 
 BackEnd Docker File
 
@@ -101,7 +87,6 @@ docker build -t  backend-flask ./backend-flask
 ### Run Docker
 ```DOCKER
 docker run --rm -p 4567:4567 -it -e FRONTEND_URL='*' -e BACKEND_URL='*' backend-flask
-
 #run docker in Detached Mode
 docker run --rm -p 4567:4567 -d -e FRONTEND_URL='*' -e BACKEND_URL='*'backend-flask
 ```
@@ -131,7 +116,7 @@ aws dynamodb put-item \
         '{"Artist": {"S": "No One You Know"}, "SongTitle": {"S": "Call Me Today"}, "AlbumTitle": {"S": "Somewhat Famous"}}' \
     --return-consumed-capacity TOTAL  
 ```
-
+<!--
 ```YAML
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ aws dynamodb create-table \
 >     --endpoint-url http://localhost:8000 \
@@ -196,13 +181,13 @@ gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ aws dynamodb put-item \
     }
 }
 ```
-
+-->
 List Tables
 
 ```
 aws dynamodb list-tables --endpoint-url http://localhost:8000
 ```
-
+<!--
 ```YAML
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ aws dynamodb list-tables --endpoint-url http://localhost:8000
 {
@@ -212,13 +197,13 @@ gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ aws dynamodb list-tables --
 }
 
 ```
-
+-->
 Get Records
 ```
 aws dynamodb scan --table-name Music --query "Items" --endpoint-url http://localhost:8000
 
 ```
-
+<!--
 ```YAML
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ aws dynamodb scan --table-name Music --query "Items" --endpoint-url http://localhost:8000
 [
@@ -236,7 +221,7 @@ gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ aws dynamodb scan --table-n
 ]
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ 
 ```
-
+-->
 Add in gitpod.yml to install postgres client
 
 ``` 
@@ -336,7 +321,7 @@ volumes:
 ```
 <img src="./Images/Week-01/Docker-Compose1.JPG"  width="70%" height="100%">
 
-
+<!--
 ### docker-compose Containers Running
 ```DOCKER
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ docker ps
@@ -348,13 +333,13 @@ e12dce8f7666   amazon/dynamodb-local:latest                  "java -jar DynamoDB
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ 
 
 ```
-
-<img src="./Images/Week-01/gitpod-page-1.JPG"  width="50%" height="100%">
+-->
+<img src="./Images/Week-01/gitpod-page-1.JPG"  width="30%" height="50%">
 
 
 Cruddur Running from GitPod 
 
-<img src="./Images/Week-01/url1.JPG"  width="70%" height="100%">
+<img src="./Images/Week-01/url1.JPG"  width="50%" height="50%">
 
 ### Modify the Message in the HomeScreen
 
@@ -371,16 +356,16 @@ class HomeActivities:
       'message': 'Learning is fun and Cloud is always fun!',
 
 ```
-
+<!--
 <img src="./Images/Week-01/Backend-data-change.JPG"  width="70%" height="100%">
-
+-->
 
 Refresh the Screen:
 
 Now you can view the updated screen
 
 
-<img src="./Images/Week-01/url_change.JPG"  width="70%" height="100%">
+<img src="./Images/Week-01/url_change.JPG"  width="50%" height="50%">
 
 
 ### Adding notification Features on the Cruddur Application.
@@ -392,7 +377,7 @@ update the Following Files inside  "frontend-react-js" Folder
 ./src/App.js, ./src/pages/NotificationsFeedPage.css and ./src/pages/NotificationsFeedPage.js files
 
 
-<img src="./Images/Week-01/notification-page-1.JPG"  width="70%" height="100%">
+<img src="./Images/Week-01/notification-page-1.JPG"  width="50%" height="50%">
 
 
 At End Commit all the Changes to the GitHub Repo.
@@ -403,7 +388,8 @@ At End Commit all the Changes to the GitHub Repo.
 
 1. Create a Bash Script file file called "bash-docker-compose.sh" inside Folder "/workspace/aws-bootcamp-cruddur-2023"
 1. Provied Execute permission to the Bash Script File. By Default, new files will not have execute permission. we need to add it used "chmod" command.
-![dcript1](./Images/Week-01/Docker-Script1.JPG)
+<img src="./Images/Week-01/Docker-Script1.JPG  width="50%" height="50%">
+
 1. update the file with the below Commands.
 ```BASH
 #!/bin/bash
@@ -414,23 +400,23 @@ echo "################END###########"
 
 ```
 4. Run docker-compose file from external the Script "sh bash-docker-compose.sh"
-![bashrun](./Images/Week-01/bash-run-1.JPG)
-![bashrun2](./Images/Week-01/bash-run-2.JPG)
 
+<img src="./Images/Week-01/bash-run-1.JPG"  width="50%" height="50%">
+
+<img src="./Images/Week-01/bash-run-2.JPG"  width="50%" height="50%">
 
 ## 02. Push and tag a image to DockerHub.
 
 1. Already i'm having GitHub Account, if you don't have, Create it.
 2. Tag the Images created in the GitPod Space. all the Images is having latest tag. So we have to change it to our GitHub id.
 
-<img src="./Images/Week-01/Docker-Images-1.JPG"  width="70%" height="100%">
+<!--img src="./Images/Week-01/Docker-Images-1.JPG"  width="70%" height="100%"-->
 
 3. Use "docker tag" command to change the tag.
 ```YML
 docker tag <image-name>:<tag> <Docker-Hub-ID>/<image-name>:<tag>
 ```
-
-![docimg](./Images/Week-01/Docker-tag-1.JPG)
+<img src="./Images/Week-01/Docker-tag-1.JPG"  width="70%" height="100%">
 
 4. We have re-tagged it to week01
 5. Login to Docker in cli
@@ -442,23 +428,22 @@ docker login
 docker push ganeshpondy/aws-bootcamp-cruddur-2023-frontend-react-js:week01
 ```
 
-![dpush](./Images/Week-01/Docker-Push-1.JPG)
-
 7. Login to https://hub.docker.com/
 8. You can Find the Docker Image.
 
-![DH](./Images/Week-01/Docker-Hub-1.JPG)    
+<img src="./Images/Week-01/Docker-Hub-1.JPG"  width="50%" height="50%">
 
-<img src="./Images/Week-01/Docker-Hub-2.JPG"  width="70%" height="100%">
+<img src="./Images/Week-01/Docker-Hub-2.JPG"  width="50%" height="50%">
 
-![DH](./Images/Week-01/Docker-Hub-Tag.JPG)  
+<img src="./Images/Week-01/Docker-Hub-Tag.JPG"  width="50%" height="50%">
+
 
 9. Start "Destop Docker" Service
 
-![DH](./Images/Week-01/Docker_Desktop.JPG)  
-
+<img src="./Images/Week-01//Docker_Desktop.JPG"  width="50%" height="50%">
 
 ---
+
 
 ## 03. Use multi-stage building for a Dockerfile build
 
@@ -484,9 +469,14 @@ CMD ["npm", "start"]
 
 ```
 
-Using Multi-Stage Compose File, the Image size is reduced from 415 MB to 181 MB
+Using Multi-Stage Compose File, the Image size is reduced from 1.5GB to 181 MB
 
-<img src="./Images/Week-01/MultiStage-Docker-Image-After.JPG"  width="70%" height="100%">
+```DOCKER
+$ docker images
+REPOSITORY                                    TAG         IMAGE ID       CREATED          SIZE
+aws-bootcamp-cruddur-2023-frontend-react-js   latest      fb04808e23b6   26 seconds ago   181MB
+```
+<!--img src="./Images/Week-01/MultiStage-Docker-Image-After.JPG"  width="70%" height="100%"-->
 
 
 And we are able to run Cruddur Application from the new Image.
@@ -499,7 +489,7 @@ And we are able to run Cruddur Application from the new Image.
 
 Updated below steps in Docker Compose file to check the HealthCheck:
 
-<img src="./Images/Week-01/Compose-Health-Checks.JPG"  width="70%" height="100%">
+<img src="./Images/Week-01/Compose-Health-Checks.JPG"  width="60%" height="70%">
 
 
 ## 05. Research best practices of Dockerfiles and attempt to implement it in your Dockerfile
@@ -546,59 +536,30 @@ CMD ["npm", "start"]
 
 
 01. Open VSC Code or Ternimal in your local Laptop or System. Check Docker running or not
-![DH](./Images/Week-01/Docker-Local-version.JPG)
+
+<img src="./Images/Week-01/Docker-Local-version.JPG"  width="60%" height="70%">
+
 
 02. Pull the Image form Docker Hub
 ```YAML
 docker pull ID/aws-bootcamp-cruddur-2023-backend-flask:week01
 ```
-![DH](./Images/Week-01/Docker-Push-1.JPG)
+<!--[DH](./Images/Week-01/Docker-Push-1.JPG)-->
 
 03. Create Bridge Network "aws-bootcamp-cruddur-2023_default"
 ```YML
-balavg@W10CBSHBL3:.../Week-01$ docker network create aws-bootcamp-cruddur-2023_default
-b28f62f5a555176328c09612074942d1a1dfccaa41935e2e2ce502b71998a12b
-balavg@W10CBSHBL3:.../Week-01$ docker network list
-NETWORK ID     NAME                                DRIVER    SCOPE
-718e46b67eeb   asgard                              bridge    local
-b28f62f5a555   aws-bootcamp-cruddur-2023_default   bridge    local
-6d9f8e318669   bridge                              bridge    local
-578250f2910f   host                                host      local
-a96a0d4a3eb2   minikube                            bridge    local
-60e096ef4225   none                                null      local
-balavg@W10CBSHBL3:.../Week-01$ bridge link
-balavg@W10CBSHBL3:.../Week-01$ 
-
+$ docker network create aws-bootcamp-cruddur-2023_default
+$ docker network list
 
 ```
 
 04. Create local volume named "aws-bootcamp-cruddur-2023_db"
 
 ```BASH
-balavg@W10CBSHBL3:.../Week-01$ docker volume create --name aws-bootcamp-cruddur-2023_db
+$ docker volume create --name aws-bootcamp-cruddur-2023_db
 aws-bootcamp-cruddur-2023_db
-balavg@W10CBSHBL3:.../Week-01$ docker volume ls
-DRIVER    VOLUME NAME
-local     30127a761c97473cbf9a5d7c93508e7b88494528f624d5ef3188cc7d6c2799d0
-local     aws-bootcamp-cruddur-2023_db
-local     d9a56a5b765404ea6b31a3229087f3754b58750ac64f62b151e0f8d9ba6d9dd7
-local     e8fdabaf58bb8992a669c2075b6b940b179378f7587bada59c32141b18302b67
-local     minikube
-balavg@W10CBSHBL3:.../Week-01$
-balavg@W10CBSHBL3:.../Week-01$ docker volume inspect aws-bootcamp-cruddur-2023_db
-[
-    {
-        "CreatedAt": "2023-02-23T01:39:11Z",
-        "Driver": "local",
-        "Labels": {},
-        "Mountpoint": "/var/lib/docker/volumes/aws-bootcamp-cruddur-2023_db/_data",
-        "Name": "aws-bootcamp-cruddur-2023_db",
-        "Options": {},
-        "Scope": "local"
-    }
-]
-balavg@W10CBSHBL3:.../Week-01$ 
-
+$ docker volume ls
+$ docker volume inspect aws-bootcamp-cruddur-2023_db
 ```
 
 05. run docker with bridge network, Enc variable and Port
@@ -688,25 +649,20 @@ We have scanned the code and the Container Image using SYNK Tool
 1. Select Repo
 1. Add into Project
 1. Scan it
-
 ![DH](./Images/Week-01/synk-Code-1.JPG)
 
 6. We can see the security vulnerability issues.
 
 7. Code Security Recommandation.
-
 ![DH](./Images/Week-01/synk-Code-Recommandations.JPG)
 
 8. To Scan Docker Image. Generate "Access Token" in Docker-Hub
-
 <img src="./Images/Week-01/synk-image-docker-hub-1.JPG"  width="70%" height="70%">
 
-
 9. Add Docker Repo in SYNK Project and Scan it
-
-![DH](./Images/Week-01/synk-image-1.JPG)
+<img src="./Images/Week-01/synk-image-1.JPG"  width="70%" height="70%">
 
 10. SYNK Recommandation for Docker Image
+<img src="./Images/Week-01/synk-image-2.JPG"  width="70%" height="70%">
 
-![DH](./Images/Week-01/synk-image-2.JPG)
 
