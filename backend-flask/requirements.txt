@@ -13,3 +13,7 @@ aws-xray-sdk
 
 # CloudWatch
 watchtower
+
+# Rollbar
+blinker
+rollbar
