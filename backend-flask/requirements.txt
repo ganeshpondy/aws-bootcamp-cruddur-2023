@@ -10,3 +10,6 @@ opentelemetry-instrumentation-requests
 
 # X-RAY
 aws-xray-sdk
+
+# CloudWatch
+watchtower
