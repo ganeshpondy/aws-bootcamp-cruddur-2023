@@ -7,3 +7,6 @@ opentelemetry-sdk
 opentelemetry-exporter-otlp-proto-http 
 opentelemetry-instrumentation-flask 
 opentelemetry-instrumentation-requests
+
+# X-RAY
+aws-xray-sdk
