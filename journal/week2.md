@@ -6,7 +6,7 @@ Register in `honeycomb.io`.
 
 Create Enviroment as `bootcamp` and Generate API Keys for Authentication.
 
-<img src="./Images/Week-02/HoneyComb-Project-1.JPG"  width="50%" height="100%">
+<img src="./Images/Week-02/HoneyComb-Project-1.JPG"  width="30%" height="100%">
 
 
 Update the  `requirement.txt` file 
@@ -76,17 +76,18 @@ And open `honeycomb` and check IO's in the Project.
 
 Open BackEnd URL:
 
-<img src="./Images/Week-02/after_Updating_honeycomb_in_backend_1.JPG"  width="70%" height="100%">
+<img src="./Images/Week-02/after_Updating_honeycomb_in_backend_1.JPG"  width="50%" height="100%">
 
 Select DataSets `backend-flask` and you can See some IO's
 
-<img src="./Images/Week-02/HoneyComb-Report-1.JPG"  width="70%" height="100%">
+<img src="./Images/Week-02/HoneyComb-Report-1.JPG"  width="50%" height="100%">
 
 Click on the Trace ID to View More details about it
 
 <img src="./Images/Week-02/HoneyComb-trace-1.JPG"  width="70%" height="100%">
 
 More Details about the IO
+
 <img src="./Images/Week-02/HoneyComb-trace-2.JPG"  width="70%" height="100%">
 
 ---
@@ -206,7 +207,7 @@ Go to Trace to view more Traces:
 
 .
 
-<img src="./Images/Week-02/X-Ray-3.JPG"  width="50%" height="100%">
+<img src="./Images/Week-02/X-Ray-3.JPG"  width="30%" height="100%">
 .
 
 <img src="./Images/Week-02/X-Ray-4.JPG"  width="50%" height="100%">
@@ -346,7 +347,7 @@ def rollbar_test():
 
 Start the `docker-compose.yml` File and try to open 'Crudder' App and Open url to verify the `rollbar` connection.
 
-<img src="./Images/Week-02/Rollbar-Test.JPG"  width="70%" height="100%">
+<img src="./Images/Week-02/Rollbar-Test.JPG"  width="50%" height="100%">
 
 Go to Rollbar and check the new alerts:
 
