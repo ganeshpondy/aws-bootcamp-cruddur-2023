@@ -286,7 +286,7 @@ For More Details, Click on the Log:
 
 ---
 
-## 03. RollBar
+## 04. RollBar
 
 Register in `rollbar.com`.
 
@@ -364,5 +364,6 @@ Break Something in the Code, then we can see the `RED` Alert in the Rollbar
 <img src="./Images/Week-02/Rollbar-alerts-3.JPG"  width="70%" height="100%">
 
 To Get More Details:
+
 <img src="./Images/Week-02/Rollbar-alerts-4.JPG"  width="70%" height="100%">
 
