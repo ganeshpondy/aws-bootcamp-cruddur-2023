@@ -6,7 +6,7 @@ Register in `honeycomb.io`.
 
 Create Enviroment as `bootcamp` and Generate API Keys for Authentication.
 
-<img src="./Images/Week-02/HoneyComb-Project-1.JPG"  width="70%" height="100%">
+<img src="./Images/Week-02/HoneyComb-Project-1.JPG"  width="50%" height="100%">
 
 
 Update the  `requirement.txt` file 
@@ -205,8 +205,11 @@ Go to Trace to view more Traces:
 <img src="./Images/Week-02/X-Ray-Traces-2
 .JPG"  width="70%" height="100%">
 
+.
+
 <img src="./Images/Week-02/X-Ray-Traces-3
 .JPG"  width="70%" height="100%">
+.
 
 <img src="./Images/Week-02/X-Ray-Traces-4
 .JPG"  width="70%" height="100%">
