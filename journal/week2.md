@@ -202,17 +202,14 @@ And open `X-Ray` and check IO's in the Project.
 
 Go to Trace to view more Traces:
 
-<img src="./Images/Week-02/X-Ray-Traces-2
-.JPG"  width="70%" height="100%">
+<img src="./Images/Week-02/X-Ray-2.JPG"  width="70%" height="100%">
 
 .
 
-<img src="./Images/Week-02/X-Ray-Traces-3
-.JPG"  width="70%" height="100%">
+<img src="./Images/Week-02/X-Ray-3.JPG"  width="50%" height="100%">
 .
 
-<img src="./Images/Week-02/X-Ray-Traces-4
-.JPG"  width="70%" height="100%">
+<img src="./Images/Week-02/X-Ray-4.JPG"  width="50%" height="100%">
 
 ---
 
@@ -274,18 +271,15 @@ And open `CloudWatch` and check Alerts in the Project.
 
 Open User Activites URL:
 
-<img src="./Images/Week-02/backend-user-activities-1
-.JPG"  width="70%" height="100%">
+<img src="./Images/Week-02/bkend-act1.JPG"  width="70%" height="100%">
 
 Go to `CloudWatch` => `Log Groups` => `cruddur`, You can find the Log Streams:
 
-<img src="./Images/Week-02/CloudWatch-1
-.JPG"  width="70%" height="100%">
+<img src="./Images/Week-02/CloudWatch-1.JPG"  width="70%" height="100%">
 
 For More Details, Click on the Log:
 
-<img src="./Images/Week-02/CloudWatch-2
-.JPG"  width="70%" height="100%">
+<img src="./Images/Week-02/CloudWatch-2.JPG"  width="70%" height="100%">
 
 ---
 
@@ -352,8 +346,7 @@ def rollbar_test():
 
 Start the `docker-compose.yml` File and try to open 'Crudder' App and Open url to verify the `rollbar` connection.
 
-<img src="./Images/Week-02/Rollbar-Test
-.JPG"  width="70%" height="100%">
+<img src="./Images/Week-02/Rollbar-Test.JPG"  width="70%" height="100%">
 
 Go to Rollbar and check the new alerts:
 
