@@ -17,3 +17,6 @@ watchtower
 # Rollbar
 blinker
 rollbar
+
+# Week-03 Cognito JWT
+Flask-AWSCognito
