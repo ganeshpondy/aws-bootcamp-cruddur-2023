@@ -5,23 +5,46 @@
 * Login to AWS and Go to Cognito
 * Follow below ScreenShot Steps to Create Cognito User Group
 
-<img src="./Images/Week-03/Cognito-User-Creation-1.JPG"  width="70%" height="100%">
+<img src="./Images/Week-03/Cognito-User-Creation-1.JPG"  width="50%" height="100%">
 
-<img src="./Images/Week-03/Cognito-User-Creation-2.JPG"  width="70%" height="100%">
+</br>
 
-<img src="./Images/Week-03/Cognito-User-Creation-3.JPG"  width="70%" height="100%">
+<img src="./Images/Week-03/Cognito-User-Creation-2.JPG"  width="50%" height="100%">
 
-<img src="./Images/Week-03/Cognito-User-Creation-4.JPG"  width="70%" height="100%">
+</br>
 
-<img src="./Images/Week-03/Cognito-User-Creation-5.JPG"  width="70%" height="100%">
+<img src="./Images/Week-03/Cognito-User-Creation-3.JPG"  width="50%" height="100%">
 
-<img src="./Images/Week-03/Cognito-User-Creation-6.JPG"  width="70%" height="100%">
+</br>
 
-<img src="./Images/Week-03/Cognito-User-Creation-7.JPG"  width="70%" height="100%">
+<img src="./Images/Week-03/Cognito-User-Creation-4.JPG"  width="50%" height="100%">
 
-<img src="./Images/Week-03/Cognito-User-Creation-8.JPG"  width="70%" height="100%">
+</br>
 
-<img src="./Images/Week-03/Cognito-User-Creation-9.JPG"  width="70%" height="100%">
+<img src="./Images/Week-03/Cognito-User-Creation-5.JPG"  width="50%" height="100%">
+
+</br>
+
+
+<img src="./Images/Week-03/Cognito-User-Creation-6.JPG"  width="50%" height="100%">
+
+</br>
+
+
+<img src="./Images/Week-03/Cognito-User-Creation-7.JPG"  width="50%" height="100%">
+
+</br>
+
+
+<img src="./Images/Week-03/Cognito-User-Creation-8.JPG"  width="50%" height="100%">
+
+</br>
+
+
+<img src="./Images/Week-03/Cognito-User-Creation-9.JPG"  width="50%" height="100%">
+
+</br>
+
 
 ## FronEnd Updates
 
@@ -135,11 +158,11 @@ Then login Crudddur app with the Username and password.
 
 Register New User and It will take you to Sigin Page
 
-<img src="./Images/Week-03/Sigup-Confirm-Page.JPG"  width="70%" height="100%">
+<img src="./Images/Week-03/Sigup-Confirm-Page.JPG"  width="50%" height="100%">
 
 You Will be Receving OTP in the mail
 
-<img src="./Images/Week-03/OTP.JPG"  width="70%" height="100%">
+<img src="./Images/Week-03/OTP.JPG"  width="50%" height="100%">
 
 Enter the OTP in the Sigin Page, Once you Confirmed then the new user will be Verified in Cognito
 
@@ -324,7 +347,7 @@ class CognitoJwtToken:
 
 Update Following CSS Files for the Look:
 
-<img src="./Images/Week-03/Improved-UI-Files.JPG"  width="30%" height="100%">
+<img src="./Images/Week-03/Improved-UI-Files.JPG"  width="10%" height="100%">
 
 ---
 
