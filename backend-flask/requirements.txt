@@ -20,3 +20,7 @@ rollbar
 
 # Week-03 Cognito JWT
 Flask-AWSCognito
+
+# Week-04 PostgreSQL
+psycopg[binary]
+psycopg[pool]
