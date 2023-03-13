@@ -5,9 +5,14 @@ LABEL="db-sessions"
 printf "${CYAN}== ${LABEL}${NO_COLOR}\n"
 
 if [ "$1" = "prod" ]; then
+  echo "############################"
   echo "Running in production mode"
+  echo "############################"
   URL=$PROD_CONNECTION_URL
 else
+  echo "####################################"
+  echo "Connecting Local Postgres SQL...."
+  echo "####################################"
   URL=$CONNECTION_URL
 fi
 
