@@ -141,9 +141,9 @@ gp env CONNECTION_URL="postgresql://postgres:password@localhost:5432/cruddur"
 #### To Connect AWS RDS
 
 ```BASH
-export PROD_CONNECTION_URL="postgresql://cruddurroot:PostgresDB69@cruddur-db-instance.c8tl2cyfj5ba.ap-south-1.rds.amazonaws.com:5432/cruddur"
+export PROD_CONNECTION_URL="postgresql://userid:password@cruddur-db-instance.c8tl2cyfj5ba.ap-south-1.rds.amazonaws.com:5432/cruddur"
 
-gp env PROD_CONNECTION_URL="postgresql://cruddurroot:PostgresDB69@cruddur-db-instance.c8tl2cyfj5ba.ap-south-1.rds.amazonaws.com:5432/cruddur"
+gp env PROD_CONNECTION_URL="postgresql://userid:password@cruddur-db-instance.c8tl2cyfj5ba.ap-south-1.rds.amazonaws.com:5432/cruddur"
 
 ```
 </br>
