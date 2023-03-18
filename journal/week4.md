@@ -1062,3 +1062,67 @@ Then, Logged-in to `getgitguardian` to Scan and review the details.
 <img src="./Images/Week-04/gitguardian_2.JPG"  width="50%" height="100%">
 
 Accordingly removed the passwords and uploaded the clean file.
+
+---
+
+## Challenges
+
+### 01. Lambda Layer 
+
+Getting Error, when Lambda is executed. So i created seperate Layer for for it. Used below Code to generate zip to upload into the Layer
+
+```BASH
+
+mkdir aws-psycopg2
+cd aws-psycopg2
+--------------------------------------------------------------------------------
+vi get_layer_packages.sh
+
+#!/bin/bash
+export PKG_DIR="python"
+rm -rf ${PKG_DIR} && mkdir -p ${PKG_DIR}
+docker run --rm -v $(pwd):/foo -w /foo lambci/lambda:build-python3.6 \
+    pip install -r requirements.txt --no-deps -t ${PKG_DIR}
+--------------------------------------------------------------------------------
+vi requirements.txt
+aws-psycopg2
+--------------------------------------------------------------------------------
+then do : chmod +x get_layer_packages.sh
+--------------------------------------------------------------------------------
+./get_layer_packages.sh
+--------------------------------------------------------------------------------
+zip -r aws-psycopg2.zip .
+--------------------------------------------------------------------------------
+
+upload this zip to the AWS Lambda Layer!
+```
+
+## 02. Unable to Post Crud Messages.
+
+Update the ActivityForm component in pages/HomeFeedPage.js to pass the user_handle prop as follows:
+
+```YAML
+<ActivityForm
+  user_handle={user}
+  popped={popped}
+  setPopped={setPopped}
+  setActivities={setActivities}
+/>
+```
+
+In the components/ActivityForm.js component, update the fetch request body to include the user_handle:
+```YAML
+body: JSON.stringify({
+  user_handle: props.user_handle.handle,
+  message: message,
+  ttl: ttl
+}),
+
+```
+In app.py, under the /api/activities route, assign the user_handle variable as follows:
+```PYTHON
+user_handle = request.json["user_handle"]
+
+```
+These changes will ensure that the user_handle prop is passed correctly and included in the fetch request, and that the server can retrieve it from the request payload.
+
