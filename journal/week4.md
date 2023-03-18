@@ -147,6 +147,7 @@ gp env PROD_CONNECTION_URL="postgresql://cruddurroot:PostgresDB69@cruddur-db-ins
 
 ```
 </br>
+
 #### Create DB 'cruddur'
 
 ```BASH
@@ -834,7 +835,7 @@ gitpod /workspace/aws-bootcamp-cruddur-2023/backend-flask (main) $
 
 <img src="./Images/Week-04/Lambda_new-1.JPG"  width="50%" height="100%">
 
-<img src="./Images/Week-04/Lambda_new-2.JPG"  width="50%" height="100%">
+<img src="./Images/Week-04/Lambda_new-2.JPG"  width="50%" height="50%">
 
 
 ### Code Deploy
@@ -902,9 +903,9 @@ Click on the popup link, it will open IAM Page
 
 <img src="./Images/Week-04/Lambda_Permission_IAM_2.JPG"  width="50%" height="100%">
 
-<img src="./Images/Week-04/Lambda_Permission_IAM_3.JPG"  width="50%" height="100%">
+<img src="./Images/Week-04/Lambda_Permission_IAM_3.JPG"  width="50%" height="50%">
 
-<img src="./Images/Week-04/Lambda_Permission_IAM_4.JPG"  width="50%" height="100%">
+<img src="./Images/Week-04/Lambda_Permission_IAM_4.JPG"  width="50%" height="50%">
 
 <img src="./Images/Week-04/Lambda_Permission_IAM_5.JPG"  width="50%" height="100%">
 
@@ -965,6 +966,7 @@ GitPod IP is automatcially Added into the SecurityGroup
 <img src="./Images/Week-04/Lambda_Create_VPC_1.JPG"  width="50%" height="100%">
 
 Go VPC => VPC => Click on the Group `vpc-0b7ecada6e605cc80`
+
 <img src="./Images/Week-04/Lambda_Create_VPC_2.JPG"  width="50%" height="100%">
 
 VPC Page will open and Find the VPC Resource Map Details:
@@ -983,7 +985,7 @@ Open Cognito page, Select the UserPool and Add the Lambda Trigger
 
 Open Cruddur App and click on "Join" Button:
 
-<img src="./Images/Week-04/Join.JPG"  width="=10%" height="100%">
+<img src="./Images/Week-04/Join.JPG"  width="=10%" height="50%">
 
 Provied the Required Details
 
@@ -1036,7 +1038,9 @@ Posting Messages with Different Login ID's
 ##### Connect RDS DB to view the Post Details and Users Details:
 
 User Details:
+
 <img src="./Images/Week-04/table-users.JPG"  width="50%" height="100%">
 
 Post Details:
+
 <img src="./Images/Week-04/table-activities.JPG"  width="50%" height="100%">
