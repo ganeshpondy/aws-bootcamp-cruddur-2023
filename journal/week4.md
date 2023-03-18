@@ -1044,3 +1044,21 @@ User Details:
 Post Details:
 
 <img src="./Images/Week-04/table-activities.JPG"  width="50%" height="100%">
+
+
+-----
+</br>
+
+## Security
+
+When we uploaded the REDAME.md File into GitHub Repo. Receive Mail alert from gitguardian. tell that "GitGuardian has detected the following PostgreSQL URI exposed within your GitHub account."
+
+<img src="./Images/Week-04/Mail_Alert.JPG"  width="50%" height="100%">
+
+Then, Logged-in to `getgitguardian` to Scan and review the details.
+
+<img src="./Images/Week-04/gitguardian_1.JPG"  width="50%" height="100%">
+
+<img src="./Images/Week-04/gitguardian_2.JPG"  width="50%" height="100%">
+
+Accordingly removed the passwords and uploaded the clean file.
