@@ -6,20 +6,28 @@ import sys
 from datetime import datetime, timedelta, timezone
 import uuid
 
+# Set up the path for the parent directory to import custom modules
 current_path = os.path.dirname(os.path.abspath(__file__))
 parent_path = os.path.abspath(os.path.join(current_path, '..', '..'))
 sys.path.append(parent_path)
+
+# Import a custom module named "db"
 from lib.db import db
 
+# Set up the attributes for the local DynamoDB instance
 attrs = {
   'endpoint_url': 'http://localhost:8000'
 }
-# unset endpoint url for use with production database
+
+# If the script is being run with a "prod" argument, use production database instead
 if len(sys.argv) == 2:
   if "prod" in sys.argv[1]:
     attrs = {}
+
+# Connect to the DynamoDB instance
 ddb = boto3.client('dynamodb',**attrs)
 
+# Define a function to retrieve user UUIDs from the database
 def get_user_uuids():
   sql = """
     SELECT 
