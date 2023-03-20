@@ -24,3 +24,6 @@ Flask-AWSCognito
 # Week-04 PostgreSQL
 psycopg[binary]
 psycopg[pool]
+
+# Week 5 — DynamoDB
+boto3

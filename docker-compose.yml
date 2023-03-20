@@ -51,18 +51,21 @@ services:
     #   retries: 3
     #   start_period: 20s
 
-  # dynamodb-local:
-  #   # https://stackoverflow.com/questions/67533058/persist-local-dynamodb-data-in-volumes-lack-permission-unable-to-open-databa
-  #   # We needed to add user:root to get this working.
-  #   user: root
-  #   command: "-jar DynamoDBLocal.jar -sharedDb -dbPath ./data"
-  #   image: "amazon/dynamodb-local:latest"
-  #   container_name: dynamodb-local
-  #   ports:
-  #     - "8000:8000"
-  #   volumes:
-  #     - "./docker/dynamodb:/home/dynamodblocal/data"
-  #   working_dir: /home/dynamodblocal
+# DynamoDB NoSQL
+  dynamodb-local:
+    # https://stackoverflow.com/questions/67533058/persist-local-dynamodb-data-in-volumes-lack-permission-unable-to-open-databa
+    # We needed to add user:root to get this working.
+    user: root
+    command: "-jar DynamoDBLocal.jar -sharedDb -dbPath ./data"
+    image: "amazon/dynamodb-local:latest"
+    container_name: dynamodb-local
+    ports:
+      - "8000:8000"
+    volumes:
+      - "./docker/dynamodb:/home/dynamodblocal/data"
+    working_dir: /home/dynamodblocal
+
+# Postgres SQL
   db:
     image: postgres:13-alpine
     restart: always
