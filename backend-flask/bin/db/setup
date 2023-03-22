@@ -15,5 +15,8 @@ sleep 2
 source "$bin_path/db/schema-load"
 sleep 2
 source "$bin_path/db/seed"
+sleep 2
+# source "$bin_path/db/update_cognito_user_ids"
+python "$bin_path/db/update_cognito_user_ids"
 
 echo "###### Completed on Local PostgresSQL #######"
