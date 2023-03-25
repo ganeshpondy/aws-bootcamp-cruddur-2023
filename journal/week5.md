@@ -2,14 +2,14 @@
 
 ## DynamoDB Modelling
 
-<img src="./Images/Week-05/DynamoDB_Modelling.jpeg"  width="70%" height="100%">
+<img src="./Images/Week-05/DynamoDB_Modelling.jpeg"  width="100%" height="100%">
 
 </br>
 
 
 ## DynamoDB Data Modeling Excel
 
-<img src="./Images/Week-05/DynamoDB_Data_Modeling_Excel.JPG"  width="50%" height="100%">
+<img src="./Images/Week-05/DynamoDB_Data_Modeling_Excel.JPG"  width="70%" height="100%">
 
 </br>
 
@@ -495,12 +495,12 @@ View to Table using Script `sh ./bin/ddb/list-tables`
 +--------------------+
 ```
 
-<img src="./Images/Week-05/List-Create.JPG"  width="100%" height="100%">
+<img src="./Images/Week-05/List-Create.JPG"  width="50%" height="100%">
 
 
 #### Drop the DynamoDB Table
 
-<img src="./Images/Week-05/Drop-Table.JPG"  width="100%" height="100%">
+<img src="./Images/Week-05/Drop-Table.JPG"  width="50%" height="100%">
 
 </br>
 </br>
@@ -656,7 +656,7 @@ And Then Load Data with the `Sees` File.
 
 ### Create VPC EndPoint
 
-<img src="./Images/Week-05/VPC_Endpoint_1.JPG"  width="100%" height="100%">
+<img src="./Images/Week-05/VPC_Endpoint_1.JPG"  width="30%" height="100%">
 
 </br>
 </br>
@@ -683,15 +683,15 @@ And Then Load Data with the `Sees` File.
 
 ### Create Lamdba
 
-<img src="./Images/Week-05/Lambda_Create_1.JPG"  width="100%" height="100%">
+<img src="./Images/Week-05/Lambda_Create_1.JPG"  width="30%" height="100%">
 
 </br>
 </br>
-<img src="./Images/Week-05/Lambda_Create_2.JPG"  width="100%" height="100%">
+<img src="./Images/Week-05/Lambda_Create_2.JPG"  width="50%" height="100%">
 
 </br>
 </br>
-<img src="./Images/Week-05/Lambda_Create_3.JPG"  width="100%" height="100%">
+<img src="./Images/Week-05/Lambda_Create_3.JPG"  width="70%" height="100%">
 
 </br>
 </br>
