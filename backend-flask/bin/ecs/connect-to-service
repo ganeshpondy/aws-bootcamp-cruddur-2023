@@ -19,5 +19,5 @@ aws ecs execute-command  \
 --cluster cruddur \
 --task $TASK_ID \
 --container $CONTAINER_NAME \
---command "/bin/bash" \
+--command "/bin/sh" \
 --interactive
