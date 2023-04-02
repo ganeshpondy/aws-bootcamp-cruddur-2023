@@ -44,8 +44,8 @@
           {"name": "OTEL_EXPORTER_OTLP_ENDPOINT", "value": "https://api.honeycomb.io"},
           {"name": "AWS_COGNITO_USER_POOL_ID", "value": "ap-south-1_JGksCajSg"},
           {"name": "AWS_COGNITO_USER_POOL_CLIENT_ID", "value": "4dlftmcggiquv257bef7tvm55b"},
-          {"name": "FRONTEND_URL", "value": "ganeshpondy.link"},
-          {"name": "BACKEND_URL", "value": "api.ganeshpondy.link"},
+          {"name": "FRONTEND_URL", "value": "https://ganeshpondy.link"},
+          {"name": "BACKEND_URL", "value": "https://api.ganeshpondy.link"},
           {"name": "AWS_DEFAULT_REGION", "value": "ap-south-1"}
         ],
         "secrets": [
