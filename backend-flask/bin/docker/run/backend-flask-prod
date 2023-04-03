@@ -16,5 +16,5 @@ docker run --rm \
 --env AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY}" \
 --env ROLLBAR_ACCESS_TOKEN="${ROLLBAR_ACCESS_TOKEN}" \
 --env AWS_COGNITO_USER_POOL_ID="${AWS_COGNITO_USER_POOL_ID}" \
---env AWS_COGNITO_USER_POOL_CLIENT_ID="5b6ro31g97urk767adrbrdj1g5" \
+--env AWS_COGNITO_USER_POOL_CLIENT_ID="4dlftmcggiquv257bef7tvm55b" \
 -it backend-flask-prod
