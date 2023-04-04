@@ -6,19 +6,18 @@ NO_COLOR='\033[0m'
 LABEL="db-setup"
 printf "${CYAN}==== ${LABEL}${NO_COLOR}\n"
 
-# bin_path="$(realpath .)/bin"
 ABS_PATH=$(readlink -f "$0")
-bin_path=$(dirname $ABS_PATH)
+DB_PATH=$(dirname $ABS_PATH)
 
-source "$bin_path/db/drop"
+source "$DB_PATH/drop"
 sleep 2
-source "$bin_path/db/create"
+source "$DB_PATH/create"
 sleep 2
-source "$bin_path/db/schema-load"
+source "$DB_PATH/schema-load"
 sleep 2
-source "$bin_path/db/seed"
+source "$DB_PATH/seed"
 sleep 2
-# source "$bin_path/db/update_cognito_user_ids"
-python "$bin_path/db/update_cognito_user_ids"
+python "$DB_PATH/update_cognito_user_ids"
+sleep 2
 
 echo "###### Completed on Local PostgresSQL #######"
