@@ -9,6 +9,8 @@ tasks:
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
       source  "$THEIA_WORKSPACE_ROOT/bin/ecr/login"
+      source  "$THEIA_WORKSPACE_ROOT/bin/frontend/generate-env "
+      source  "$THEIA_WORKSPACE_ROOT/bin/backend/generate-env"
   - name: react-js
     command: |
       source  "$THEIA_WORKSPACE_ROOT/bin/frontend/generate-env"
