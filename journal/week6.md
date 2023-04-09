@@ -28,15 +28,15 @@ gitpod /workspace/aws-bootcamp-cruddur-2023/backend-flask (main) $
 aws logs create-log-group --log-group-name cruddur
 aws logs put-retention-policy --log-group-name cruddur --retention-in-days 1
 ```
-<img src="./Images/Week-06/Cloud-watch.jpg"  width="100%" height="50%">
+<img src="./Images/Week-06/Cloud-watch.JPG"  width="100%" height="50%">
 
-<img src="./Images/Week-06/Cloud-watch-2.jpg"  width="100%" height="50%">
+<img src="./Images/Week-06/Cloud-watch-2.JPG"  width="100%" height="50%">
 
 ### Create NameSpace is "AWS Cloud Map"
 
-<img src="./Images/Week-06/AWS_Cloud_Map_NameSpace_1.jpg"  width="100%" height="50%">
+<img src="./Images/Week-06/AWS_Cloud_Map_NameSpace_1.JPG"  width="100%" height="50%">
 
-<img src="./Images/Week-06/AWS_Cloud_Map_NameSpace_2.jpg"  width="100%" height="50%">
+<img src="./Images/Week-06/AWS_Cloud_Map_NameSpace_2.JPG"  width="100%" height="50%">
 
 
 ### Create ECS Cluster
@@ -47,12 +47,12 @@ aws ecs create-cluster \
 --service-connect-defaults namespace=cruddur
 ```
 
-<img src="./Images/Week-06/ECS_Cluster_1.jpg"  width="100%" height="50%">
+<img src="./Images/Week-06/ECS_Cluster_1.JPG"  width="100%" height="50%">
 
 </br>
 </br>
 
-<img src="./Images/Week-06/ECS_NameSpace.jpg"  width="100%" height="30%">
+<img src="./Images/Week-06/ECS_NameSpace.JPG"  width="100%" height="30%">
 
 
 #### Create Docker Images and Push to ECR
@@ -148,10 +148,10 @@ d1a969d0e2e5: Pushed
 c9182c130984: Pushed 
 3.10-slim-buster: digest: sha256:31827b60ef2becea7b6b017f309c57062f7b3f37ad309eb57e9ed20411690c01 size: 1370
 ```
-<img src="./Images/Week-06/create_repository_1.jpg"  width="100%" height="50%">
+<img src="./Images/Week-06/create_repository_1.JPG"  width="100%" height="50%">
 
 
-<img src="./Images/Week-06/create_repository_python_image.jpg"  width="100%" height="50%">
+<img src="./Images/Week-06/create_repository_python_image.JPG"  width="100%" height="50%">
 
 #### Remove image from local 
 
@@ -182,7 +182,7 @@ curl https://4567-ganeshpondy-awsbootcamp-kff269iaaag.ws-us93.gitpod.io/api/heal
 }
 ```
 
-<img src="./Images/Week-06/Backend_Health_check.jpg"  width="100%" height="30%">
+<img src="./Images/Week-06/Backend_Health_check.JPG"  width="100%" height="30%">
 
 #### Create Backend repo & tag & Push the code to ECR
 ```sh
@@ -200,7 +200,7 @@ docker tag backend-flask:latest $ECR_BACKEND_FLASK_URL:latest
 docker push $ECR_BACKEND_FLASK_URL:latest
 ```
 
-<img src="./Images/Week-06/create_repository_backend_image.jpg"  width="100%" height="50%">
+<img src="./Images/Week-06/create_repository_backend_image.JPG"  width="100%" height="50%">
 
 ----
 
@@ -248,10 +248,10 @@ $ aws ssm put-parameter --type "SecureString" --name "/cruddur/backend-flask/OTE
 }
 $ 
 ```
-<img src="./Images/Week-06/parameter_store_1.jpg"  width="100%" height="50%">
+<img src="./Images/Week-06/parameter_store_1.JPG"  width="100%" height="50%">
 
 
-<img src="./Images/Week-06/parameter_store_2.jpg"  width="100%" height="50%">
+<img src="./Images/Week-06/parameter_store_2.JPG"  width="100%" height="50%">
 
 ---
 
@@ -259,30 +259,30 @@ $
 
 Follow the below Steps to Create IAM Role and 
 
-<img src="./Images/Week-06/IAM_Role_Create_1.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/IAM_Role_Create_1.JPG" width="100%" height="100%">
 
 </br>
 </br>
 
-<img src="./Images/Week-06/IAM_Role_Create_2.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/IAM_Role_Create_2.JPG" width="100%" height="100%">
 
 </br>
 
-<img src="./Images/Week-06/IAM_Role_Create_3.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/IAM_Role_Create_3.JPG" width="100%" height="100%">
 
 </br>
 
-<img src="./Images/Week-06/IAM_Role_Create_4.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/IAM_Role_Create_4.JPG" width="100%" height="100%">
 
 </br>
 
 
-<img src="./Images/Week-06/IAM_Role_Create_5.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/IAM_Role_Create_5.JPG" width="100%" height="100%">
 
 
 </br>
 
-<img src="./Images/Week-06/IAM_Role_Create_64.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/IAM_Role_Create_64.JPG" width="100%" height="100%">
 
 </br>
 
@@ -300,12 +300,12 @@ aws iam list-roles | grep -i RoleName
 
 #### Create TaskRole
 
-<img src="./Images/Week-06/IAM_Role_TaskRole_1.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/IAM_Role_TaskRole_1.JPG" width="100%" height="100%">
 
 
 </br>
 
-<img src="./Images/Week-06/IAM_Role_TaskRole_2.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/IAM_Role_TaskRole_2.JPG" width="100%" height="100%">
 
 </br>
 
@@ -325,32 +325,32 @@ aws ecs register-task-definition --cli-input-json file://aws/task-definitions/ba
 ```
 
 
-<img src="./Images/Week-06/Task_Defintion_BE_1.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/Task_Defintion_BE_1.JPG" width="100%" height="100%">
 
 
 </br>
 
-<img src="./Images/Week-06/Task_Defintion_BE_2.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/Task_Defintion_BE_2.JPG" width="100%" height="100%">
 
 
 </br>
 
-<img src="./Images/Week-06/Task_Defintion_BE_3.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/Task_Defintion_BE_3.JPG" width="100%" height="100%">
 
 
 </br>
 
-<img src="./Images/Week-06/Task_Defintion_BE_4.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/Task_Defintion_BE_4.JPG" width="100%" height="100%">
 
 
 </br>
 
-<img src="./Images/Week-06/Task_Defintion_BE_6.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/Task_Defintion_BE_6.JPG" width="100%" height="100%">
 
 
 </br>
 
-<img src="./Images/Week-06/Task_Defintion_BE_5.jpg" width="100%" height="100%">
+<img src="./Images/Week-06/Task_Defintion_BE_5.JPG" width="100%" height="100%">
 
 ---
 
@@ -399,37 +399,37 @@ aws ecs create-service --cli-input-json file://aws/json/service-backend-flask.js
 
 Follow the below Steps:
 
-<img src="./Images/Week-06/Create_ECS_BE_1.jpg" width="100%" height="50%">
+<img src="./Images/Week-06/Create_ECS_BE_1.JPG" width="100%" height="50%">
 
 </br>
 </br>
 
 
-<img src="./Images/Week-06/Create_ECS_BE_2.jpg" width="100%" height="50%">
+<img src="./Images/Week-06/Create_ECS_BE_2.JPG" width="100%" height="50%">
 
 </br>
 </br>
 
 
-<img src="./Images/Week-06/Create_ECS_BE_3.jpg" width="100%" height="50%">
+<img src="./Images/Week-06/Create_ECS_BE_3.JPG" width="100%" height="50%">
 
 </br>
 </br>
 
 
-<img src="./Images/Week-06/Create_ECS_BE_4.jpg" width="100%" height="50%">
+<img src="./Images/Week-06/Create_ECS_BE_4.JPG" width="100%" height="50%">
 
 </br>
 </br>
 
 
-<img src="./Images/Week-06/Create_ECS_BE_1.1.jpg" width="100%" height="50%">
+<img src="./Images/Week-06/Create_ECS_BE_1.1.JPG" width="100%" height="50%">
 
 </br>
 </br>
 
 
-<img src="./Images/Week-06/Create_ECS_BE_1.2.jpg" width="100%" height="50%">
+<img src="./Images/Week-06/Create_ECS_BE_1.2.JPG" width="100%" height="50%">
 
 </br>
 </br>
