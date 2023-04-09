@@ -259,7 +259,7 @@ $
 
 Follow the below Steps to Create IAM Role and 
 
-<img src="./Images/Week-06/IAM_Role_Create_1.JPG" width="100%" height="100%">
+<img src="./Images/Week-06/IAM_Role_Create_1.JPG" width="50%" height="50%">
 
 </br>
 </br>
@@ -345,7 +345,7 @@ aws ecs register-task-definition --cli-input-json file://aws/task-definitions/ba
 
 </br>
 
-<img src="./Images/Week-06/Task_Defintion_BE_6.JPG" width="100%" height="100%">
+<img src="./Images/Week-06/Task_Defintion_BE_6.JPG" width="50%" height="100%">
 
 
 </br>
@@ -399,13 +399,13 @@ aws ecs create-service --cli-input-json file://aws/json/service-backend-flask.js
 
 Follow the below Steps:
 
-<img src="./Images/Week-06/Create_ECS_BE_1.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/Create_ECS_BE_1.JPG" width="50%" height="50%">
 
 </br>
 </br>
 
 
-<img src="./Images/Week-06/Create_ECS_BE_2.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/Create_ECS_BE_2.JPG" width="50%" height="50%">
 
 </br>
 </br>
@@ -437,19 +437,19 @@ Follow the below Steps:
 ---
 
 
-<img src="./Images/Week-06/ECS_CLI.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/ECS_CLI.JPG" width="70%" height="50%">
 
 </br>
 </br>
 
 
-<img src="./Images/Week-06/update_ECS_BE_ServiceConnect_1.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/update_ECS_BE_ServiceConnect_1.JPG" width="70%" height="50%">
 
 </br>
 </br>
 
 
-<img src="./Images/Week-06/update_ECS_BE_ServiceConnect_2.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/update_ECS_BE_ServiceConnect_2.JPG" width="70%" height="50%">
 
 </br>
 </br>
@@ -540,7 +540,7 @@ aws ecs execute-command  \
 </br>
 
 
-<img src="./Images/Week-06/ECS_BK_ALB_Health_Check.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/ECS_BK_ALB_Health_Check.JPG" width="50%" height="50%">
 </br>
 </br>
 
@@ -799,7 +799,7 @@ Starting session with SessionId: ecs-execute-command-04336592d421fc8b0
 
 #### Connect with ALB DNS Name
 
-<img src="./Images/Week-06/ECS_FR_ALB_5.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/ECS_FR_ALB_5.JPG" width="70%" height="50%">
 </br>
 </br>
 
@@ -895,31 +895,31 @@ Add ALB in Route53
 
 
 
-<img src="./Images/Week-06/ALB_Listener_Add_1.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/ALB_Listener_Add_1.JPG" width="70%" height="50%">
 
 </br>
 </br>
 
 
-<img src="./Images/Week-06/ALB_Listener_Add_2.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/ALB_Listener_Add_2.JPG" width="70%" height="50%">
 
 </br>
 </br>
 
 
-<img src="./Images/Week-06/ALB_Listener_Add_3.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/ALB_Listener_Add_3.JPG" width="70%" height="50%">
 
 </br>
 </br>
 
 
-<img src="./Images/Week-06/ALB_Listener_Add_4.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/ALB_Listener_Add_4.JPG" width="70%" height="50%">
 
 </br>
 </br>
 
 
-<img src="./Images/Week-06/ALB_Listener_Delete_5.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/ALB_Listener_Delete_5.JPG" width="70%" height="50%">
 
 </br>
 </br>
@@ -948,7 +948,7 @@ Add ALB in Route53
 </br>
 
 
-<img src="./Images/Week-06/ALB_Listener_Delete55.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/ALB_Listener_Delete55.JPG" width="50%" height="50%">
 
 </br>
 </br>
@@ -963,7 +963,7 @@ Add ALB in Route53
 
 ## Health Checks
 
-<img src="./Images/Week-06/API_BK_Health_Check_1.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/API_BK_Health_Check_1.JPG" width="50%" height="50%">
 </br>
 </br>
 
@@ -977,23 +977,21 @@ Add ALB in Route53
 </br>
 </br>
 
-
+<!-- 1111
 <img src="./Images/Week-06/API_Error_1.JPG" width="100%" height="50%">
-</br>
-</br>
-
+11111 -->
 
 <img src="./Images/Week-06/FrontEnd_URL.JPG" width="100%" height="50%">
 </br>
 </br>
 
-
+<!-- 
 <img src="./Images/Week-06/Error_3.JPG" width="100%" height="50%">
 </br>
-</br>
+</br> -->
 
 
-<img src="./Images/Week-06/Error_3_1.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/Error_3_1.JPG" width="50%" height="50%">
 </br>
 </br>
 
@@ -1003,7 +1001,7 @@ Add ALB in Route53
 </br>
 
 
-<img src="./Images/Week-06/bk_API_Messages_2.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/bk_API_Messages_2.JPG" width="50%" height="50%">
 </br>
 </br>
 
@@ -1015,11 +1013,11 @@ Add ALB in Route53
 </br>
 </br>
 
-<img src="./Images/Week-06/Stop_ECS_Containers_2.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/Stop_ECS_Containers_2.JPG" width="50%" height="50%">
 </br>
 </br>
 
-<img src="./Images/Week-06/Stop_ECS_Containers_3.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/Stop_ECS_Containers_3.JPG" width="50%" height="50%">
 </br>
 </br>
 
@@ -1060,7 +1058,7 @@ X-Ray is a Sidecar Container, which will run inside container. We have added X-R
 
 We have created `RUBY` Script to generate `.env` Variables:
 
-<img src="./Images/Week-06/env_file_generation.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/env_file_generation.JPG" width="50%" height="50%">
 </br>
 </br>
 
@@ -1097,6 +1095,6 @@ Please refer last three lines of the below `.gitpod.yml` output:
       ruby "$THEIA_WORKSPACE_ROOT/bin/backend/generate-env"
 ```
 </br>
-<img src="./Images/Week-06/Docker-Compose-UP-Error-Fix.JPG" width="100%" height="50%">
+<img src="./Images/Week-06/Docker-Compose-UP-Error-Fix.JPG" width="70%" height="50%">
 </br>
 </br>
