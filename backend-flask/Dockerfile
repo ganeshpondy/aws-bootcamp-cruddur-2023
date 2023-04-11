@@ -23,6 +23,8 @@ COPY . .
 # Inside Container and wil remain set when the container is running.
 # ENV FLASK_ENV=development
 # ENV FLASK_DEBUG=1
+# Python my default buffers stdout and this forces it to print straight to terminal, no longer have to insert random new lines to make it print out to terminal.
+ENV PYTHONUNBUFFERED=1
 
 EXPOSE ${PORT}
 
