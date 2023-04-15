@@ -14,7 +14,7 @@ def handler(event:, context:)
   { statusCode: 200, body: body }
 end
 
-puts handler(
-  event: {},
-  context: {}
-)
+# puts handler(
+#   event: {},
+#   context: {}
+# )
