@@ -19,5 +19,7 @@ source "$DB_PATH/seed"
 sleep 2
 python "$DB_PATH/update_cognito_user_ids"
 sleep 2
+source "$DB_PATH/migrate"
+sleep 2
 
 echo "###### Completed on Local PostgresSQL #######"
