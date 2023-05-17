@@ -18,7 +18,7 @@ Parameters:
     Default: 10.0.0.0/16
   Az1:
     Type: AWS::EC2::AvailabilityZone::Name
-    Default: ca-central-1a
+    Default: ap-south-1a
   SubnetCidrBlocks: 
     Description: "Comma-delimited list of CIDR blocks for our private public subnets"
     Type: CommaDelimitedList
@@ -31,10 +31,10 @@ Parameters:
       10.0.20.0/24
   Az2:
     Type: AWS::EC2::AvailabilityZone::Name
-    Default: ca-central-1b
+    Default: ap-south-1b
   Az3:
     Type: AWS::EC2::AvailabilityZone::Name
-    Default: ca-central-1d
+    Default: ap-south-1c
 Resources:
   VPC:
     # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html
